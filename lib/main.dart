@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => new _MyAppState();
 }
 
-var cardAspectRatio = 12.0 / 16.0;
+var cardAspectRatio = 12.0 / 10.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
 
 class _MyAppState extends State<MyApp> {
@@ -32,8 +32,8 @@ class _MyAppState extends State<MyApp> {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
-            Color(0xFF1b1e44),
-            Color(0xFF2d3447),
+            Color(0xFF00467F),
+            Color(0xFFA5CC82),
           ],
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
@@ -190,8 +190,8 @@ class _MyAppState extends State<MyApp> {
                     padding: EdgeInsets.only(left: 18.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset("assets/image_02.jpg",
-                          width: 296.0, height: 222.0),
+                      child:
+                          Image.asset(images[3], width: 296.0, height: 222.0),
                     ),
                   )
                 ],
@@ -248,7 +248,7 @@ class CardScrollWidget extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(16.0),
               child: Container(
-                decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                decoration: BoxDecoration(color: Colors.black12, boxShadow: [
                   BoxShadow(
                       color: Colors.black12,
                       offset: Offset(3.0, 6.0),
